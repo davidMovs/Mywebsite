@@ -1,0 +1,48 @@
+footer {
+    height: 70px;
+    width: 75vw;
+
+    background: silver;
+
+    font-family: 'Montserrat', sans-serif;
+
+    position: relative;
+    bottom: 0px;
+    margin: auto;
+}
+
+footer>ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 10px;
+
+    transition: top .1s linear;
+}
+
+footer>ul>li {
+    margin: 0px 10px;
+}
+
+span#rigths {
+    position: absolute;
+    font-size: 20px;
+    bottom: 50%;
+    left: 10px;
+
+    transition: font-size .1s linear
+}
+
+.footer-icons {
+    width: 1.575em;
+    height: 1.575em;
+
+    transform: scale(1);
+    transition: transform .1s linear;
+}
+
+.footer-icons:hover {
+    transform: scale(1.2);
+    transition: transform .1s linear;
+}

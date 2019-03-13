@@ -1,0 +1,133 @@
+header {
+    text-align: center;
+    width: 75vw;
+    height: 150px;
+
+    background-color: black;
+
+    margin: auto;
+}
+
+header>img {
+    display: inline-block;
+    border-radius: 50%;
+    height: 100%;
+}
+
+nav {
+    z-index: 5;
+}
+
+nav[data-status="deactive"] {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    width: 75vw;
+    height: 50px;
+
+    background-color: black;
+    margin: auto;
+
+    transition: background-color .2s linear, height .3s linear, border-radius .5s linear;
+}
+
+nav[data-status="active"] {
+    display: flex;
+    align-items: center;
+    position: fixed;
+
+    width: 75vw;
+    height: 59px;
+    border-radius: 0px 0px 10px 10px;
+    opacity: 0.85;
+
+    top: 0px;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: rgb(44, 35, 35);
+
+    transition: background-color .2s linear, height .3s linear, border-radius .5s linear;
+}
+
+nav>img[data-status="deactive"] {
+    position: absolute;
+    opacity: 0;
+
+    height: 85%;
+    border-radius: 50%;
+
+    transition: opacity .2s linear;
+
+    left: 10px;
+}
+
+nav>img[data-status="active"] {
+    position: absolute;
+    opacity: 1;
+
+    height: 85%;
+    border-radius: 50%;
+
+    transition: opacity .2s linear;
+
+    left: 10px;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    transition: justify-content .1s linear;
+    width: 100%;
+}
+
+nav>ul>li {
+    margin: 0px 20px;
+    /* width: 100px; */
+    /* max-height: 25px; */
+}
+
+nav>ul>li>a.menu-text {
+    /* position: relative; */
+    text-decoration: none;
+    color: white;
+    font-size: 1.26em;
+    font-family: 'Staatliches', cursive;
+
+    transition: color .1s linear, font-size .1s linear;
+}
+
+nav>ul>li>a.menu-text.active {
+    text-decoration: none;
+    color: white;
+    font-size: 1.312em;
+    font-family: 'Staatliches', cursive;
+
+    transition: color .1s linear, font-size .1s linear;
+}
+
+nav>ul>li>a.menu-text:hover {
+    color: rgb(168, 159, 159);
+}
+
+
+img.tab-icons {
+    margin-right: 2px;
+    width: 20px;
+    height: 20px;
+
+    transform: scale(1);
+    transition: transform .1s linear, margin-right .1s linear;
+}
+
+img.tab-icons.active {
+    margin-right: 4px;
+
+    transform: scale(1.1);
+    transition: transform .1s linear, margin-right .1s linear;
+}
