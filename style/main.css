@@ -135,7 +135,7 @@ article.skills-articles {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50%;
+    /* height: 50%; */
 }
 
 ul.skills-ul {
