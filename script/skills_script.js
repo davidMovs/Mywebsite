@@ -1,6 +1,6 @@
 var
     section = document.querySelector("#my-skills-section"),
-    skillsArr = ["HTML5", "CSS3", "JavaScript", "jQuery", "LESS", "Sass", "Bootstrap", "Git", "NodeJS"], //
+    skillsArr = ["HTML5", "CSS3", "JavaScript", "Java", "C#", ".Net", "Git"],
     articlesArr = [];
 
 function createArticles(skillsPart) {
@@ -13,6 +13,19 @@ function createArticles(skillsPart) {
     skillsPart.forEach(el => {
         var li = document.createElement('li');
         li.className = 'skill';
+
+        if (el == "C#") {
+            var img = document.createElement('img');
+            img.src = "./img/csharp.svg";
+            img.alt = el;
+            var h3 = document.createElement('h3');
+            h3.innerText = el;
+
+            li.append(img, h3);
+
+            ul.append(li);
+            return;
+        }
 
         var img = document.createElement('img');
         img.src = "./img/" + el.toLowerCase() + '.svg';
@@ -35,7 +48,7 @@ var arr = [], m = 0;
 skillsArr.forEach((el, i) => {
     m++;
     arr.push(el);
-    if (m == 4 || !skillsArr[i+1]) {
+    if (m == 4 || !skillsArr[i + 1]) {
         articlesArr.push(createArticles(arr));
         arr = [];
         m = 0;
@@ -45,6 +58,6 @@ skillsArr.forEach((el, i) => {
 // section.style.height = (articlesArr.length * 500) + "px";
 
 articlesArr.forEach(el => {
-    el.style.height = (100/articlesArr.length) +"%";
+    el.style.height = (100 / articlesArr.length) + "%";
     section.append(el);
 });
