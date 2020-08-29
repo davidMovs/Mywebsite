@@ -1,0 +1,232 @@
+main {
+    width: 75vw;
+    height: auto;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+}
+
+/* Basic langs */
+
+section#basic-langs-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    height: 1000px;
+    background: #c2e59c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #64b3f4, #c2e59c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+article.basic-langs.deactive {
+    opacity: 0;
+}
+
+article#html-article.basic-langs.active {
+    opacity: 1;
+    transition: opacity .5s linear;
+    transition-delay: .5s;
+}
+
+article#css-article.basic-langs.active {
+    opacity: 1;
+    transition: opacity .5s linear;
+    transition-delay: 1s;
+}
+
+article#js-article.basic-langs.active {
+    opacity: 1;
+    transition: opacity .5s linear;
+    transition-delay: 1.5s;
+}
+
+article.basic-langs {
+    position: relative;
+    width: 100%;
+    height: 25%;
+}
+
+article.basic-langs>h1 {
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    width: 75%;
+    font-size: 1.9em;
+    top: 20%;
+}
+
+article.basic-langs>p {
+    font-family: 'Laila', serif;
+    position: absolute;
+    width: 75%;
+    font-size: 1.2em;
+    top: 40%;
+}
+
+article.basic-langs>img {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 20%;
+    right: 0;
+}
+
+article#css-article>img {
+    left: 10px;
+}
+
+article#css-article>h1 {
+    right: 0;
+}
+
+article#css-article>p {
+    right: 0;
+}
+
+/* About me */
+
+section#about-me-section {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    background-image: url("../img/aboutMeBG.jpg");
+}
+
+img#my-photo {
+    display: inline-block;
+    position: relative;
+    top: 10%;
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+}
+
+p#my-bio {
+    max-width: 60%;
+    position: relative;
+    top: 20%;
+    font-size: 1.625em;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+/* My skills */
+
+h2#my-skills-h2{
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    top: 20px;
+}
+
+section#my-skills-section {
+    width: 100%;
+    height: 1000px;
+    background-color: white;
+}
+
+article.skills-articles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: 50%; */
+}
+
+ul.skills-ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+li.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    height: 80%;
+    border: 1px solid black;
+    box-shadow: 1px 1px 4px;
+    transform: scale(1);
+    transition: transform .3s linear, box-shadow .3s linear;
+}
+
+li.skill:hover {
+    transform: scale(1.02);
+    box-shadow: 1px 1px 10px;
+    transition: transform .3s linear, box-shadow .3s linear;
+}
+
+li.skill>img {
+    width: 80%;
+    height: 65%;
+}
+
+li.skill>h3 {
+    font-size: 1.438em;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Contact section */
+
+section#contact-section {
+    height: 800px;
+    width: 100%;
+    background: #ADA996;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+}
+
+section#contact-section>h3 {
+    font-size: 1.9em;
+    position: relative;
+    top: 60px;
+    font-family: 'Anton', sans-serif;
+}
+
+article.contact-box {
+    width: 50%;
+    height: 100%;
+}
+
+article#wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+article#contact-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article#contact-text>ul {
+    list-style: none;
+    font-size: 1.5em;
+    font-family: 'Anton', sans-serif;
+}
+
+article#contact-google-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article#contact-google-map>iframe {
+    width: 80%;
+    height: 40%;
+}
