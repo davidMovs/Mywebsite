@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Site Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/mediaQueries.css">
+    <link rel="shortcut icon" href="./ico/icon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Laila" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./script/script.js" defer ></script>
+    <script src="./script/skills_script.js" defer ></script>
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo.png" alt="Site Logo" id="logo">
+    </header>
+    <nav id="menu" data-status="deactive">
+        <img src="./img/logo.png" alt="Site Mini Logo" id="mini-logo" data-status="deactive">
+        <ul>
+            <li><img src="./ico/home.ico" alt="Home Icon" class="tab-icons"><a href="#home" id="home-tab"
+                    class="menu-text">
+                    Home </a></li>
+            <li><img src="./ico/list.ico" alt="About Icon" class="tab-icons"><a href="#about-me" id="home-tab"
+                    class="menu-text">
+                    About me</a></li>
+            <li><img src="./ico/settings.ico" alt="Contact Icon" class="tab-icons"><a href="#skills" id="contact-tab"
+                    class="menu-text">
+                    Skills </a></li>
+            <li><img src="./ico/phone.ico" alt="Other Icon" class="tab-icons"><a href="#contact" id="other-tab"
+                    class="menu-text">
+                    Contact</a></li>
+        </ul>
+    </nav>
+    <main id="main">
+        <a id="home"></a>
+        <section id="basic-langs-section">
+
+            <article class="basic-langs deactive" id="html-article">
+                <h1>HTML 5</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fugiat iure vitae enim qui cupiditate
+                    sint! Quos nisi qui porro similique eligendi, laboriosam laborum! Temporibus eum praesentium in
+                    reiciendis quidem!</p>
+                <img src="./img/html5.svg" alt="HTML 5">
+            </article>
+
+            <article class="basic-langs deactive" id="css-article">
+                <h1>CSS 3</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fugiat iure vitae enim qui cupiditate
+                    sint! Quos nisi qui porro similique eligendi, laboriosam laborum! Temporibus eum praesentium in
+                    reiciendis quidem!</p>
+                <img src="./img/css3.svg" alt="HTML 5">
+            </article>
+
+            <article class="basic-langs deactive" id="js-article">
+                <h1>JavaScript</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fugiat iure vitae enim qui cupiditate
+                    sint! Quos nisi qui porro similique eligendi, laboriosam laborum! Temporibus eum praesentium in
+                    reiciendis quidem!</p>
+                <img src="./img/javascript.svg" alt="HTML 5">
+            </article>
+
+        </section>
+        <a id="about-me"></a>
+        <section id="about-me-section">
+            <img src="./img/myPhoto.png" id="my-photo" alt="My Photo">
+            <p id="my-bio">
+                Hi there! My name is David and I study in National Polytechnic University of Armenia . I
+                like to learn more about programming and especially about Web. Now you are on my first site. Below you
+                will see my skills and how to contact me. Thank you for visiting my website and have a nice day!
+            </p>
+        </section>
+        <a id="skills"></a>
+        <h2 id="my-skills-h2">My Skills</h2>
+        <section id="my-skills-section">
+            
+        </section>
+        <a id="contact"></a>
+        <section id="contact-section">
+            <h3>Contact Me</h3>
+            <article id="wrapper">
+                <article id="contact-text" class="contact-box">
+                    <ul>
+                        <li>Full Name: David Movsisyan</li>
+                        <li>E-mail: d.movsisyan55@gmail.com</li>
+                        <li>Tel.: +37491005855, +37441356105</li>
+                        <li>Country and City: Armenia , Yerevan</li>
+                    </ul>
+                </article>
+                <article id="contact-google-map" class="contact-box">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.81558860102!2d44.520844415647645!3d40.19091727726535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd2086b2df83%3A0xc610c0812ab39292!2sSEUA+High+School!5e0!3m2!1sru!2s!4v1551697526144"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                </article>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <span id="rigths">&copy; All rights reserved 2019</span>
+        <ul>
+            <li><a href="https://www.instagram.com/david._.movsisyan/" target="_blank"><img src="./ico/instagram-icon.svg" alt="Instagram"
+                        class="footer-icons"></a></li>
+            <li><a href="https://www.facebook.com/david.movsisyan.56" target="_blank"><img src="./ico/facebook.svg" alt="Facebook"
+                        class="footer-icons"></a></li>
+            <li><a href="https://github.com/davidMovs" target="_blank"><img src="./ico/github-icon.svg" alt="Git"
+                        class="footer-icons"></a></li>
+            <li><a href="https://youtu.be/cNld-AHw-Wg" target="_blank"><img src="./ico/youtube.svg" alt="Youtube"
+                        class="footer-icons"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
