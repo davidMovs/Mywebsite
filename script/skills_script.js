@@ -1,6 +1,6 @@
 var
     section = document.querySelector("#my-skills-section"),
-    skillsArr = ["HTML5", "CSS3", "JavaScript", "Java", "C#", ".Net", "Git"],
+    skillsArr = ["HTML5", "CSS3", "JavaScript", "Java", "C#", "dotNet", "Git"],
     articlesArr = [];
 
 function createArticles(skillsPart) {
